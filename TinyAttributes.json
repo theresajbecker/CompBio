@@ -1,0 +1,262 @@
+[
+    {
+        "source": "VAT1L",
+        "total_mutations": "7"
+    },
+    {
+        "source": "ZNF724P",
+        "total_mutations": "3"
+    },
+    {
+        "source": "TMEM69",
+        "total_mutations": "1"
+    },
+    {
+        "source": "TMEM68",
+        "total_mutations": "9"
+    },
+    {
+        "source": "TMEM67",
+        "total_mutations": "12"
+    },
+    {
+        "source": "TMEM66",
+        "total_mutations": "4"
+    },
+    {
+        "source": "KIAA0528",
+        "total_mutations": "8"
+    },
+    {
+        "source": "CCNYL1",
+        "total_mutations": "1"
+    },
+    {
+        "source": "TMEM64",
+        "total_mutations": "4"
+    },
+    {
+        "source": "TMEM62",
+        "total_mutations": "3"
+    },
+    {
+        "source": "SDHAF2",
+        "total_mutations": "4"
+    },
+    {
+        "source": "PRPF8",
+        "total_mutations": "8"
+    },
+    {
+        "source": "PRPF6",
+        "total_mutations": "8"
+    },
+    {
+        "source": "LOC200726",
+        "total_mutations": "4"
+    },
+    {
+        "source": "PRPF4",
+        "total_mutations": "2"
+    },
+    {
+        "source": "PRPF3",
+        "total_mutations": "4"
+    },
+    {
+        "source": "JOSD2",
+        "total_mutations": "1"
+    },
+    {
+        "source": "OBP2B",
+        "total_mutations": "1"
+    },
+    {
+        "source": "AOX1",
+        "total_mutations": "27"
+    },
+    {
+        "source": "OBP2A",
+        "total_mutations": "6"
+    },
+    {
+        "source": "ZC2HC1C",
+        "total_mutations": "2"
+    },
+    {
+        "source": "PNLIP",
+        "total_mutations": "16"
+    },
+    {
+        "source": "ZC2HC1A",
+        "total_mutations": "1"
+    },
+    {
+        "source": "TMEM59",
+        "total_mutations": "2"
+    },
+    {
+        "source": "STK4",
+        "total_mutations": "7"
+    },
+    {
+        "source": "STK3",
+        "total_mutations": "4"
+    },
+    {
+        "source": "TMEM57",
+        "total_mutations": "5"
+    },
+    {
+        "source": "TMEM56",
+        "total_mutations": "2"
+    },
+    {
+        "source": "ZFP112",
+        "total_mutations": "18"
+    },
+    {
+        "source": "TMEM53",
+        "total_mutations": "2"
+    },
+    {
+        "source": "TMEM51",
+        "total_mutations": "3"
+    },
+    {
+        "source": "KIAA0513",
+        "total_mutations": "4"
+    },
+    {
+        "source": "JMJD1C",
+        "total_mutations": "24"
+    },
+    {
+        "source": "HOXB13",
+        "total_mutations": "4"
+    },
+    {
+        "source": "C21orf7",
+        "total_mutations": "2"
+    },
+    {
+        "source": "GOLM1",
+        "total_mutations": "4"
+    },
+    {
+        "source": "CASZ1",
+        "total_mutations": "17"
+    },
+    {
+        "source": "ZFP106",
+        "total_mutations": "9"
+    },
+    {
+        "source": "TMEM48",
+        "total_mutations": "4"
+    },
+    {
+        "source": "TMEM47",
+        "total_mutations": "5"
+    },
+    {
+        "source": "MAVS",
+        "total_mutations": "8"
+    },
+    {
+        "source": "TMEM43",
+        "total_mutations": "3"
+    },
+    {
+        "source": "STIL",
+        "total_mutations": "10"
+    },
+    {
+        "source": "OPN5",
+        "total_mutations": "16"
+    },
+    {
+        "source": "TMEM40",
+        "total_mutations": "8"
+    },
+    {
+        "source": "OPN4",
+        "total_mutations": "11"
+    },
+    {
+        "source": "SEPT9",
+        "total_mutations": "4"
+    },
+    {
+        "source": "OPN3",
+        "total_mutations": "2"
+    },
+    {
+        "source": "SEPT8",
+        "total_mutations": "3"
+    },
+    {
+        "source": "SEPT7",
+        "total_mutations": "3"
+    },
+    {
+        "source": "SEPT6",
+        "total_mutations": "9"
+    },
+    {
+        "source": "SEPT5",
+        "total_mutations": "4"
+    },
+    {
+        "source": "ESR2",
+        "total_mutations": "11"
+    },
+    {
+        "source": "SEPT4",
+        "total_mutations": "3"
+    },
+    {
+        "source": "ESR1",
+        "total_mutations": "10"
+    },
+    {
+        "source": "SEPT3",
+        "total_mutations": "7"
+    },
+    {
+        "source": "SEPT2",
+        "total_mutations": "4"
+    },
+    {
+        "source": "SEPT1",
+        "total_mutations": "4"
+    },
+    {
+        "source": "MUS81",
+        "total_mutations": "6"
+    },
+    {
+        "source": "FMR1NB",
+        "total_mutations": "8"
+    },
+    {
+        "source": "TKTL2",
+        "total_mutations": "37"
+    },
+    {
+        "source": "TKTL1",
+        "total_mutations": "11"
+    },
+    {
+        "source": "SPHAR",
+        "total_mutations": "1"
+    },
+    {
+        "source": "CDCP2",
+        "total_mutations": "3"
+    },
+    {
+        "source": "TMEM33",
+        "total_mutations": "2"
+    }
+]
