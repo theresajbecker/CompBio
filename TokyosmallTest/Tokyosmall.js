@@ -14,7 +14,7 @@ $(function(){
   
   // get exported json from cytoscape desktop via ajax
   var graphP = $.ajax({
-    url: 'https://cdn.rawgit.com/maxkfranz/934042c1ecc464a8de85/raw/', // tokyo-railways.json
+    url: 'https://rawgit.com/theresajbecker/CompBio/master/TokyosmallTest/Tokyosmall2.json', // tokyo-railways.json
     type: 'GET',
     dataType: 'json'
   });
