@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <style type="text/css">
+    .full-height { height: 600px; margin: 0 0; padding: 0 0; }
+    </style>
+
+    <script src="jquery-1.11.3.js"></script>
+    <script src="cytoscape.js"></script>
+    <script src="arbor.js"></script>
+    <script src="springy.js"></script>
+
+
+    
+    <script src="arbor-tween.js"></script>
+    <script src="springy.js"></script>
+
+
+    <script type='text/javascript'>
+        function onLoad() {
+
+             // create a mapper for node size
+            var nodeSizeMapper = {
+                continuousMapper: {
+                    attr: {
+                        name: "weight",
+                        min: 0,
+                        max: 40
+                    },
+                    mapped: {
+                        min: 5,
+                        max: 25
+                    }
+                }
+            };
+
+            $("#cy").cytoscape( {
+                layout: { name: "arbor" }, // works when "random"
+                style: {
+                    selectors: {
+                        "node":{
+                            shape: "ellipse",
+                            fillColor: "#3366FF",
+                            height: nodeSizeMapper,
+                            width: nodeSizeMapper,
+                            labelText: {
+                                passthroughMapper: "id"
+                            }
+                        },
+                        "edge": {
+                            lineColor: "#CCFF33",//"#ccc",
+                            targetArrowColor: "#CCFF33", //"#ccc",
+                            width: {
+                                continuousMapper: {
+                                    attr: {
+                                        name: "weight",
+                                        min: 20,
+                                        max: 35
+                                    },
+                                    mapped: {
+                                        min: 1,
+                                        max: 3
+                                    }
+                                }
+                            },
+                            targetArrowShape: "triangle",
+                            // labelText: {
+                            //     passthroughMapper: "weight"
+                            // }
+                        },
+                        "node:selected": {
+                            fillColor: "#333"
+                        },
+                        "edge:selected":{
+                            lineColor: "#666",
+                            targetArrowColor: "#666"
+                        }
+                    }
+                },                    
+                ready: function(cy) { },
+            });
+            window.cy = $("#cy").cytoscape("get");
+
+            $.getJSON('SOFTest.json', function(elements) {
+                //console.log(elements);
+                window.elements = elements;
+                cy.load( elements );
+            });
+        }
+    </script>
+</head>
+
+<body onload="onLoad()">
+        <div class="full-height" id="cy">
+        </div>
+</body>
+</html>

@@ -39,7 +39,8 @@ $(function(){
     
     var cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
-      layout: { name: 'preset' },
+      //changing layout to cola from { name: 'preset' },
+      layout: 'random',
       style: styleJson,
       elements: elements,
       motionBlur: true,
@@ -47,11 +48,11 @@ $(function(){
       boxSelectionEnabled: false
     });
 
-    mendData();
-    bindRouters();
+    //mendData();
+    //bindRouters();
   }
 
-  function mendData(){
+/*  function mendData(){
     // because the source data doesn't connect nodes properly, use the cytoscape api to mend it:
 
     cy.startBatch();
@@ -100,9 +101,9 @@ $(function(){
     }
 
     cy.endBatch(); //.autolock( true );
-  }
+  }*/
 
-  var start, end;
+/*  var start, end;
   var $body = $('body');
 
   function selectStart( node ){
@@ -157,9 +158,9 @@ $(function(){
   function clear(){
     $body.removeClass('has-start has-end');
     cy.elements().removeClass('path not-path start end');
-  }
+  }*/
 
-  function bindRouters(){
+/*  function bindRouters(){
     
     var $clear = $('#clear');
 
@@ -211,5 +212,5 @@ $(function(){
     });
 
     $clear.on('click', clear);
-  }
+  }*/
 });
