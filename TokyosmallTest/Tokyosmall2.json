@@ -8,7 +8,7 @@
     "shared_name" : "main_islands_japan(1)",
     "SUID" : 20760,
     "name" : "tokyo_only"
-  },
+    },
   "elements" : {
     "nodes" : [ {
       "data" : {
@@ -140,7 +140,7 @@
         "y" : -356719.89
       },
       "selected" : false
-    }, 
+    } ], 
     "edges" : [ {
       "data" : {
         "id" : "18417",
@@ -235,7 +235,7 @@
       "data" : {
         "id" : "16255",
         "source" : "5901",
-        "target" : "8221",
+        "target" : "5904",
         "line_name_k" : "ギンザセン",
         "is_bullet" : false,
         "lon" : 139.75720810526002,
