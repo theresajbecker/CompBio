@@ -40,7 +40,7 @@ $(function(){
     var cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
       //changing layout to cola from { name: 'preset' },
-      layout: 'random',
+      layout: 'springy',
       style: styleJson,
       elements: elements,
       motionBlur: true,
@@ -103,114 +103,114 @@ $(function(){
     cy.endBatch(); //.autolock( true );
   }*/
 
-/*  var start, end;
-  var $body = $('body');
+  // var start, end;
+  // var $body = $('body');
 
-  function selectStart( node ){
-    clear();
+  // function selectStart( node ){
+  //   clear();
 
-    $body.addClass('has-start');
+  //   $body.addClass('has-start');
 
-    start = node;
+  //   start = node;
 
-    start.addClass('start');
-  }
+  //   start.addClass('start');
+  // }
 
-  function selectEnd( node ){
-    $body.addClass('has-end calc');
+  // function selectEnd( node ){
+  //   $body.addClass('has-end calc');
 
-    end = node;
+  //   end = node;
 
-    cy.startBatch();
+  //   cy.startBatch();
 
-    end.addClass('end');
+  //   end.addClass('end');
 
-    setTimeout(function(){
-      var aStar = cy.elements().aStar({
-        root: start,
-        goal: end,
-        weight: function( e ){
-          if( e.data('is_walking') ){
-            return 0.25; // assume very little time to walk inside stn
-          }
+  //   setTimeout(function(){
+  //     var aStar = cy.elements().aStar({
+  //       root: start,
+  //       goal: end,
+  //       weight: function( e ){
+  //         if( e.data('is_walking') ){
+  //           return 0.25; // assume very little time to walk inside stn
+  //         }
           
-          return e.data('is_bullet') ? 1 : 3; // assume bullet is ~3x faster
-        }
-      });
+  //         return e.data('is_bullet') ? 1 : 3; // assume bullet is ~3x faster
+  //       }
+  //     });
 
-      if( !aStar.found ){
-        $body.removeClass('calc');
-        clear();
+  //     if( !aStar.found ){
+  //       $body.removeClass('calc');
+  //       clear();
 
-        cy.endBatch();
-        return;
-      }
+  //       cy.endBatch();
+  //       return;
+  //     }
 
-      cy.elements().not( aStar.path ).addClass('not-path');
-      aStar.path.addClass('path');
+  //     cy.elements().not( aStar.path ).addClass('not-path');
+  //     aStar.path.addClass('path');
 
-      cy.endBatch();
+  //     cy.endBatch();
 
-      $body.removeClass('calc');
-    }, 300);
-  }
+  //     $body.removeClass('calc');
+  //   }, 300);
+  // }
 
-  function clear(){
-    $body.removeClass('has-start has-end');
-    cy.elements().removeClass('path not-path start end');
-  }*/
+  // function clear(){
+  //   $body.removeClass('has-start has-end');
+  //   cy.elements().removeClass('path not-path start end');
+  // }
 
-/*  function bindRouters(){
+  // function bindRouters(){
     
-    var $clear = $('#clear');
+  //   var $clear = $('#clear');
 
-    cy.nodes().qtip({
-      content: {
-        text: function(){
-          var $ctr = $('<div class="select-buttons"></div>');
-          var $start = $('<button id="start">START</button>');
-          var $end = $('<button id="end">END</button>');
+  //   cy.nodes().qtip({
+  //     content: {
+  //       text: function(){
+  //         var $ctr = $('<div class="select-buttons"></div>');
+  //         var $start = $('<button id="start">START</button>');
+  //         var $end = $('<button id="end">END</button>');
           
-          $start.on('click', function(){
-            var n = cy.$('node:selected');
+  //         $start.on('click', function(){
+  //           var n = cy.$('node:selected');
 
-            selectStart( n );
+  //           selectStart( n );
 
-            n.qtip('api').hide();
-          });
+  //           n.qtip('api').hide();
+  //         });
 
-          $end.on('click', function(){
-            var n = cy.$('node:selected');
+  //         $end.on('click', function(){
+  //           var n = cy.$('node:selected');
 
-            selectEnd( n );
+  //           selectEnd( n );
 
-            n.qtip('api').hide();
-          });
+  //           n.qtip('api').hide();
+  //         });
           
-          $ctr.append( $start ).append( $end );
+  //         $ctr.append( $start ).append( $end );
           
-          return $ctr;
-        }
-      },
-      show: {
-        solo: true
-      },
-      position: {
-        my: 'top center',
-        at: 'bottom center',
-        adjust: {
-          method: 'flip'
-        }
-      },
-      style: {
-        classes: 'qtip-bootstrap',
-        tip: {
-          width: 16,
-          height: 8
-        }
-      }
-    });
+  //         return $ctr;
+  //       }
+  //     },
+  //     show: {
+  //       solo: true
+  //     },
+  //     position: {
+  //       my: 'top center',
+  //       at: 'bottom center',
+  //       adjust: {
+  //         method: 'flip'
+  //       }
+  //     },
+  //     style: {
+  //       classes: 'qtip-bootstrap',
+  //       tip: {
+  //         width: 16,
+  //         height: 8
+  //       }
+  //     }
+  //   });
 
-    $clear.on('click', clear);
-  }*/
+  //   $clear.on('click', clear);
+  // }
 });
