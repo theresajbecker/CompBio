@@ -27,12 +27,13 @@ $(function(){
   });
   
   // when both graph export json and style loaded, init cy
+
   Promise.all([ graphP, styleP ]).then(initCy);
   
   function initCy( then ){
     var loading = document.getElementById('loading');
     var expJson = then[0];
-    //var styleJson = then[1];
+    var styleJson = then[1];
     var elements = expJson.elements;
     
     loading.classList.add('loaded');
@@ -40,13 +41,31 @@ $(function(){
     var cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
       //changing layout to cola from { name: 'preset' },
-      layout: 'random',
+      layout: 'springy',
       //attempting to change the style and layout
-      //style: styleJson,
+      style: styleJson,
       elements: elements,
-      motionBlur: true,
-      selectionType: 'single',
-      boxSelectionEnabled: false
+      animate: true, // whether to show the layout as it's running
+      maxSimulationTime: 4000, // max length in ms to run the layout
+      ungrabifyWhileSimulating: true, // so you can't drag nodes during layout
+      fit: true, // whether to fit the viewport to the graph
+      padding: 30, // padding on fit
+      boundingBox: undefined, // constrain layout bounds; { x1, y1, x2, y2 } or { x1, y1, w, h }
+      random: false, // whether to use random initial positions
+      infinite: false, // overrides all other options for a forces-all-the-time mode
+      ready: undefined, // callback on layoutready
+      stop: undefined, // callback on layoutstop
+
+      // springy forces
+      stiffness: 400,
+      repulsion: 400,
+      damping: 0.5
+      //original 
+      //style: styleJson,
+      //elements: elements,
+      //motionBlur: true,
+      //selectionType: 'single',
+      //boxSelectionEnabled: false
     });
 
     //mendData();
