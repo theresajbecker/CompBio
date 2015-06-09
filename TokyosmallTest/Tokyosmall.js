@@ -32,7 +32,7 @@ $(function(){
   function initCy( then ){
     var loading = document.getElementById('loading');
     var expJson = then[0];
-    var styleJson = then[1];
+    //var styleJson = then[1];
     var elements = expJson.elements;
     
     loading.classList.add('loaded');
