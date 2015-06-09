@@ -42,12 +42,13 @@ $(function(){
     var cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
       //changing layout to cola from { name: 'preset' },
-      layout: {
-        name: 'springy',
-        padding: 10,
-        edgeLength : 'data(weight)',
-        },
+      // layout: {
+      //   name: 'springy',
+      //   padding: 10,
+      //   edgeLength : 'data(weight)',
+      //   },
       //attempting to change the style and layout
+      layout: 'springy',
       style: styleJson,
       elements: elements,
       animate: true, // whether to show the layout as it's running
