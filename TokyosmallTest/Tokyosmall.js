@@ -40,8 +40,9 @@ $(function(){
     var cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
       //changing layout to cola from { name: 'preset' },
-      layout: 'springy',
-      style: styleJson,
+      layout: 'random',
+      //attempting to change the style and layout
+      //style: styleJson,
       elements: elements,
       motionBlur: true,
       selectionType: 'single',
