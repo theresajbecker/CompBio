@@ -2,6 +2,7 @@ $(function(){ // on dom ready
 
 var cy = cytoscape({
   container: $('#cy')[0],
+  
   // $.getJSON("TinyAttributes.json", function(json) {
   //   console.log(json); // this will show the info it in firebug console
 //});
@@ -63,18 +64,19 @@ var cy = cytoscape({
   },
   
   layout: {
-    name: 'cola',
+    name: 'springy',
     padding: 10,
-    edgeLength : 'data(weight)'
+    edgeLength : 'data(weight)',
+    //elements: 'elements'
   }
 });
-  
-cy.on('tap', 'node', function(){
-  try { // your browser may block popups
-    window.open( this.data('href') );
-  } catch(e){ // fall back on url change
-    window.location.href = this.data('href'); 
-  } 
-});
+
+// cy.on('tap', 'node', function(){
+//   try { // your browser may block popups
+//     window.open( this.data('href') );
+//   } catch(e){ // fall back on url change
+//     window.location.href = this.data('href'); 
+//   } 
+// });
 
 }); // on dom ready
