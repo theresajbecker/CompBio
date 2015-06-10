@@ -1,0 +1,49 @@
+	
+
+<html>
+<head>
+  <title>Springy.js image node demo</title>
+</head>
+<body>
+<script src="jquery-1.11.3.js"></script>
+<script src="springy.js"></script>
+<script src="springyui.js"></script>
+<script>    
+    
+    function randRGB() {
+  return Math.floor(Math.random()*16777215).toString(16);
+}
+    
+      // get exported json from cytoscape desktop via ajax
+  var graphP = $.ajax({
+    url: 'https://rawgit.com/theresajbecker/CompBio/master/TokyosmallTest/Tokyosmall2.json', // tokyo-railways.json
+    type: 'GET',
+    dataType: 'json'
+  });  
+    
+    var employee1 = dictionary.employee1;
+	var employee2 = dictionary.employee2;
+ 
+	for ( var i in employee1) {
+		var id = employee1[i].id;
+		var name = employee1[i].name;
+		console.log(id);
+		console.log(name);
+	}
+ 
+	for ( var i in employee2) {
+		var id = employee2[i].id;
+		var name = employee2[i].name;
+		console.log(id);
+		console.log(name);
+	}
+    
+    </script>
+
+<div>
+<canvas id="springydemo" width="800" height="400" style="border: 1px solid black;">
+
+
+</canvas>
+</div>
+</body></html>

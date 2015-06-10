@@ -20,17 +20,17 @@ $(function(){
   });
   
   // // also get style via ajax
-  var styleP = $.ajax({
-    url: 'https://cdn.rawgit.com/maxkfranz/2c23fe9a23d0cc8d43af/raw/', // tokyo-railways-style.cycss
-    type: 'GET',
-    dataType: 'text'
-  });
+  // var styleP = $.ajax({
+  //   url: 'https://cdn.rawgit.com/maxkfranz/2c23fe9a23d0cc8d43af/raw/', // tokyo-railways-style.cycss
+  //   type: 'GET',
+  //   dataType: 'text'
+  // });
   
   // when both graph export json and style loaded, init cy
 
-  //Promise.all([ graphP ]).then(initCy);
+  Promise.all([ graphP ]).then(initCy);
 
-  Promise.all([ graphP, styleP ]).then(initCy);
+  //Promise.all([ graphP, styleP ]).then(initCy);
   
   
   function initCy( then ){
@@ -38,7 +38,7 @@ $(function(){
     var loading = document.getElementById('loading');
     var expJson = then[0];
     //taking out style load
-    var styleJson = then[1];
+    //var styleJson = then[1];
     var elements = expJson.elements;
     console.log(loading )
     loading.classList.add('loaded');
@@ -46,17 +46,15 @@ $(function(){
     var cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
       //changing layout to cola from { name: 'preset' },
-      //layout: { name: 'preset' },
-      layout: 'cola',
-       // layout: {
-       //  name: 'springy',
-       //  padding: 10,
-       //  edgeLength : 'data(weight)',
-       //  },
+       layout: {
+        name: 'springy',
+        padding: 10,
+        edgeLength : 'data(weight)',
+        },
       //attempting to change the style and layout
       //layout: 'springy',
       //taking out style
-      style: styleJson,
+      //style: styleJson,
       elements: elements,
       animate: true, // whether to show the layout as it's running
       maxSimulationTime: 4000, // max length in ms to run the layout

@@ -1,0 +1,82 @@
+	
+
+<html>
+<head>
+  <title>Springy.js image node demo</title>
+</head>
+<body>
+<script src="jquery-1.11.3.js"></script>
+<script src="springy.js"></script>
+<script src="springyui.js"></script>
+<script src="bluebird.min.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+     
+<script/>  
+    
+  $.ajax({
+    url: 'https://rawgit.com/theresajbecker/CompBio/master/TokyosmallTest/Tokyosmall2.json', // tokyo-railways.json
+    type: 'GET',
+    dataType: 'json'
+  }).done(function (graphP) {  
+
+      
+    for (var i = 0; i < graphP.elements.nodes.length; i++) {  
+        var node = graphP.elements.nodes[i].data.id;
+        
+        console.log('node id');
+        console.log(graphP.elements.nodes[i].data.id);
+        console.log('station_name');
+        console.log(graphP.elements.nodes[i].data.station_name);
+    }
+        
+    for (var i = 0; i < graphP.elements.edges.length; i++) {  
+        var node = graphP.elements.edges[i].data.source;
+        console.log('edges source');
+        console.log(graphP.elements.edges[i].data.source);
+        console.log('edges target');
+        console.log(graphP.elements.edges[i].data.target);
+        //console.log(node)
+        };
+    
+<!-- Moved this down to include lower functions so graphP is in scope-->
+
+    
+<!--//////////////Above here works////////////////////////-->
+      
+
+    
+var graph = new Springy.Graph();
+    
+    for (var i = 0; i < graphP.elements.nodes.length; i++) {  
+        var node = graph.newNode({ label: 'graphP.elements.nodes[i].data.id'});
+                                                     };
+                                
+    
+
+          
+    for (var i = 0; i < graphP.elements.edges.length; i++) {  
+        var edge = graph.newEdge({source: graphP.elements.edges[i].data.target},
+                                 {target: graphP.elements.edges[i].data.target});
+        
+        };
+      
+$( document ).ready(function() {
+  // js goes in here.
+  
+$(function(){
+  var springy = window.springy = jQuery('#springydemo').springy({
+    graph: graph,
+    nodeSelected: function(node){
+      console.log('Node selected: ' + JSON.stringify(node.data));
+    },
+    repulsion: 500
+    }); 
+  });
+});  
+    
+    
+});
+</script>
+
+
+</body></html>
