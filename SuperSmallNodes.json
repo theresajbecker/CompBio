@@ -1,0 +1,326 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.1.1",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "selected" : true,
+    "__Annotations" : [ "" ],
+    "shared_name" : "main_islands_japan(1)",
+    "SUID" : 20760,
+    "name" : "tokyo_only"
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "8220",
+        "station_name" : "京成高砂",
+        "mass" : "10"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "8221",
+        "station_name" : "新柴又",
+        "mass" : "20"
+        },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "5901",
+        "station_name" : "日本橋",
+        "mass" : "45"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "5902",
+        "station_name" : "京橋",
+        "mass" : "100"
+      },
+      
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "5903",
+        "station_name" : "銀座",
+        "mass" : "2"
+      },
+      "position" : {
+        "x" : 1397639.65,
+        "y" : -356719.89
+      },
+      "selected" : false
+    } ], 
+    "edges" : [ {
+      "data" : {
+        "id" : "18417",
+        "source" : "8220",
+        "target" : "8221",
+        "line_name_k" : "ホクソウテツドウホクソウセン",
+        "is_bullet" : false,
+        "lon" : 140.03784499075186,
+        "company_name_k" : "ホクソウテツドウ",
+        "zoom" : 11,
+        "SUID" : 18417,
+        "company_type" : 0,
+        "company_name_h" : "北総鉄道株式会社",
+        "interaction" : "99340",
+        "shared_interaction" : "99340",
+        "company_url" : "http://www.hokuso-railway.co.jp/",
+        "line_name" : "北総鉄道北総線",
+        "selected" : false,
+        "company_name" : "北総鉄道",
+        "company_cd" : 152,
+        "name" : "9934001 (99340) 9934002",
+        "rr_cd" : 99,
+        "company_name_r" : "北総鉄道",
+        "e_status_x" : 0,
+        "shared_name" : "9934001 (99340) 9934002",
+        "lat" : 35.78346285846615,
+        "e_status_y" : 0,
+        "line_name_h" : "北総鉄道北総線"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "16253",
+        "source" : "5901",
+        "target" : "5902",
+        "line_name_k" : "ギンザセン",
+        "is_bullet" : false,
+        "lon" : 139.75720810526002,
+        "company_name_k" : "トウキョウメトロ",
+        "zoom" : 13,
+        "SUID" : 16253,
+        "company_type" : 2,
+        "company_name_h" : "東京地下鉄株式会社",
+        "interaction" : "28001",
+        "shared_interaction" : "28001",
+        "company_url" : "http://www.tokyometro.jp/",
+        "line_name" : "東京メトロ銀座線",
+        "selected" : false,
+        "company_name" : "東京メトロ",
+        "company_cd" : 18,
+        "name" : "2800109 (28001) 2800110",
+        "rr_cd" : 28,
+        "company_name_r" : "東京メトロ",
+        "e_status_x" : 0,
+        "shared_name" : "2800109 (28001) 2800110",
+        "lat" : 35.68646095045909,
+        "e_status_y" : 0,
+        "line_name_h" : "東京メトロ銀座線"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "16254",
+        "source" : "5902",
+        "target" : "8220",
+        "line_name_k" : "ギンザセン",
+        "is_bullet" : false,
+        "lon" : 139.75720810526002,
+        "company_name_k" : "トウキョウメトロ",
+        "zoom" : 13,
+        "SUID" : 16254,
+        "company_type" : 2,
+        "company_name_h" : "東京地下鉄株式会社",
+        "interaction" : "28001",
+        "shared_interaction" : "28001",
+        "company_url" : "http://www.tokyometro.jp/",
+        "line_name" : "東京メトロ銀座線",
+        "selected" : false,
+        "company_name" : "東京メトロ",
+        "company_cd" : 18,
+        "name" : "2800110 (28001) 2800111",
+        "rr_cd" : 28,
+        "company_name_r" : "東京メトロ",
+        "e_status_x" : 0,
+        "shared_name" : "2800110 (28001) 2800111",
+        "lat" : 35.68646095045909,
+        "e_status_y" : 0,
+        "line_name_h" : "東京メトロ銀座線"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "16255",
+        "source" : "5901",
+        "target" : "8221",
+        "line_name_k" : "ギンザセン",
+        "is_bullet" : false,
+        "lon" : 139.75720810526002,
+        "company_name_k" : "トウキョウメトロ",
+        "zoom" : 13,
+        "SUID" : 16255,
+        "company_type" : 2,
+        "company_name_h" : "東京地下鉄株式会社",
+        "interaction" : "28001",
+        "shared_interaction" : "28001",
+        "company_url" : "http://www.tokyometro.jp/",
+        "line_name" : "東京メトロ銀座線",
+        "selected" : false,
+        "company_name" : "東京メトロ",
+        "company_cd" : 18,
+        "name" : "2800111 (28001) 2800112",
+        "rr_cd" : 28,
+        "company_name_r" : "東京メトロ",
+        "e_status_x" : 0,
+        "shared_name" : "2800111 (28001) 2800112",
+        "lat" : 35.68646095045909,
+        "e_status_y" : 0,
+        "line_name_h" : "東京メトロ銀座線"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "16256",
+        "source" : "5904",
+        "target" : "5905",
+        "line_name_k" : "ギンザセン",
+        "is_bullet" : false,
+        "lon" : 139.75720810526002,
+        "company_name_k" : "トウキョウメトロ",
+        "zoom" : 13,
+        "SUID" : 16256,
+        "company_type" : 2,
+        "company_name_h" : "東京地下鉄株式会社",
+        "interaction" : "28001",
+        "shared_interaction" : "28001",
+        "company_url" : "http://www.tokyometro.jp/",
+        "line_name" : "東京メトロ銀座線",
+        "selected" : false,
+        "company_name" : "東京メトロ",
+        "company_cd" : 18,
+        "name" : "2800112 (28001) 2800113",
+        "rr_cd" : 28,
+        "company_name_r" : "東京メトロ",
+        "e_status_x" : 0,
+        "shared_name" : "2800112 (28001) 2800113",
+        "lat" : 35.68646095045909,
+        "e_status_y" : 0,
+        "line_name_h" : "東京メトロ銀座線"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "16257",
+        "source" : "5905",
+        "target" : "5906",
+        "line_name_k" : "ギンザセン",
+        "is_bullet" : false,
+        "lon" : 139.75720810526002,
+        "company_name_k" : "トウキョウメトロ",
+        "zoom" : 13,
+        "SUID" : 16257,
+        "company_type" : 2,
+        "company_name_h" : "東京地下鉄株式会社",
+        "interaction" : "28001",
+        "shared_interaction" : "28001",
+        "company_url" : "http://www.tokyometro.jp/",
+        "line_name" : "東京メトロ銀座線",
+        "selected" : false,
+        "company_name" : "東京メトロ",
+        "company_cd" : 18,
+        "name" : "2800113 (28001) 2800114",
+        "rr_cd" : 28,
+        "company_name_r" : "東京メトロ",
+        "e_status_x" : 0,
+        "shared_name" : "2800113 (28001) 2800114",
+        "lat" : 35.68646095045909,
+        "e_status_y" : 0,
+        "line_name_h" : "東京メトロ銀座線"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "16258",
+        "source" : "5906",
+        "target" : "5907",
+        "line_name_k" : "ギンザセン",
+        "is_bullet" : false,
+        "lon" : 139.75720810526002,
+        "company_name_k" : "トウキョウメトロ",
+        "zoom" : 13,
+        "SUID" : 16258,
+        "company_type" : 2,
+        "company_name_h" : "東京地下鉄株式会社",
+        "interaction" : "28001",
+        "shared_interaction" : "28001",
+        "company_url" : "http://www.tokyometro.jp/",
+        "line_name" : "東京メトロ銀座線",
+        "selected" : false,
+        "company_name" : "東京メトロ",
+        "company_cd" : 18,
+        "name" : "2800114 (28001) 2800115",
+        "rr_cd" : 28,
+        "company_name_r" : "東京メトロ",
+        "e_status_x" : 0,
+        "shared_name" : "2800114 (28001) 2800115",
+        "lat" : 35.68646095045909,
+        "e_status_y" : 0,
+        "line_name_h" : "東京メトロ銀座線"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "16259",
+        "source" : "5907",
+        "target" : "5908",
+        "line_name_k" : "ギンザセン",
+        "is_bullet" : false,
+        "lon" : 139.75720810526002,
+        "company_name_k" : "トウキョウメトロ",
+        "zoom" : 13,
+        "SUID" : 16259,
+        "company_type" : 2,
+        "company_name_h" : "東京地下鉄株式会社",
+        "interaction" : "28001",
+        "shared_interaction" : "28001",
+        "company_url" : "http://www.tokyometro.jp/",
+        "line_name" : "東京メトロ銀座線",
+        "selected" : false,
+        "company_name" : "東京メトロ",
+        "company_cd" : 18,
+        "name" : "2800115 (28001) 2800116",
+        "rr_cd" : 28,
+        "company_name_r" : "東京メトロ",
+        "e_status_x" : 0,
+        "shared_name" : "2800115 (28001) 2800116",
+        "lat" : 35.68646095045909,
+        "e_status_y" : 0,
+        "line_name_h" : "東京メトロ銀座線"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "16260",
+        "source" : "5908",
+        "target" : "5909",
+        "line_name_k" : "ギンザセン",
+        "is_bullet" : false,
+        "lon" : 139.75720810526002,
+        "company_name_k" : "トウキョウメトロ",
+        "zoom" : 13,
+        "SUID" : 16260,
+        "company_type" : 2,
+        "company_name_h" : "東京地下鉄株式会社",
+        "interaction" : "28001",
+        "shared_interaction" : "28001",
+        "company_url" : "http://www.tokyometro.jp/",
+        "line_name" : "東京メトロ銀座線",
+        "selected" : false,
+        "company_name" : "東京メトロ",
+        "company_cd" : 18,
+        "name" : "2800116 (28001) 2800117",
+        "rr_cd" : 28,
+        "company_name_r" : "東京メトロ",
+        "e_status_x" : 0,
+        "shared_name" : "2800116 (28001) 2800117",
+        "lat" : 35.68646095045909,
+        "e_status_y" : 0,
+        "line_name_h" : "東京メトロ銀座線"
+      },
+      "selected" : false
+    } ]
+  }
+}
