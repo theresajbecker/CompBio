@@ -14,40 +14,35 @@
       "data" : {
         "id" : "8220",
         "station_name" : "京成高砂",
-        "mass" : "10"
+        "mass" : 10
       },
       "selected" : false
     }, {
       "data" : {
         "id" : "8221",
         "station_name" : "新柴又",
-        "mass" : "20"
+        "mass" : 20
         },
       "selected" : false
     }, {
       "data" : {
         "id" : "5901",
         "station_name" : "日本橋",
-        "mass" : "45"
+        "mass" : 45
       },
       "selected" : false
     }, {
       "data" : {
         "id" : "5902",
         "station_name" : "京橋",
-        "mass" : "100"
+        "mass" : 100
       },
-      
       "selected" : false
     }, {
       "data" : {
         "id" : "5903",
         "station_name" : "銀座",
-        "mass" : "2"
-      },
-      "position" : {
-        "x" : 1397639.65,
-        "y" : -356719.89
+        "mass" : 2
       },
       "selected" : false
     } ], 

@@ -14,13 +14,17 @@
 <script/>  
     
   $.ajax({
-    url: 'https://rawgit.com/theresajbecker/CompBio/master/TokyosmallTest/Tokyosmall2.json',
+    url: 'https://rawgit.com/theresajbecker/CompBio/master/SuperSmallNodes.json',
     type: 'GET',
     dataType: 'json'
   }).done(function(graphP) {  
 
     for (var i = 0; i < graphP.elements.nodes.length; i++) {  
         var node = graphP.elements.nodes[i].data.id;
+        var Nmass = graphP.elements.nodes[i].data.mass;
+        console.log('mass');
+        console.log('graphP.elements.nodes[i].data.mass');
+                                                    
         
         console.log('node id');
         console.log(graphP.elements.nodes[i].data.id);
