@@ -7,7 +7,7 @@
 <script src="jquery-1.11.3.js"></script>
 <script src="springy.js"></script>
 <script src="springyui.js"></script>
-<script src="bluebird.min.js"></script>
+
 <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
      
 <script/>  
@@ -20,41 +20,27 @@
     
     console.log(graphP);
 
-    for (var i = 0; i < graphP.elements.nodes.length; i++) {  
-        var node = graphP.elements.nodes[i].data.id;
-        var Nmass = graphP.elements.nodes[i].data.mass;
-        console.log('mass');
-        console.log(graphP.elements.nodes[i].data.mass);
-        console.log('Nmass');
-        console.log(Nmass);
-        console.log('node id');
-        console.log(graphP.elements.nodes[i].data.id);
-        console.log('station_name');
-        console.log(graphP.elements.nodes[i].data.station_name);
-    }
-        
-    for (var j = 0; j < graphP.elements.edges.length; j++) {
-        console.log('edges id');
-        console.log(graphP.elements.edges[j].data.id);
-        console.log('edges source');
-        console.log(graphP.elements.edges[j].data.source);
-        console.log('edges target');
-        console.log(graphP.elements.edges[j].data.target);
-        }
+
     
     var graph = new Springy.Graph();
     
     for ( i = 0; i < graphP.elements.nodes.length; i++) {  
-        var node = graph.newNode({id: graphP.elements.nodes[i].data.id}, {mass: graphP.elements.nodes[i].data.mass} );
-        console.log('node')
+        var testing1 = graph.newNode({label: 'testing1'});
+        var testing2 = graph.newNode({label: 'testing2'});                                         
+        console.log(graphP.elements.nodes[i].data.label);                                          
+        var name = graphP.elements.nodes[i].data.label;
+        console.log(name);                                         
+        var name = graph.newNode({label: name });
+        console.log(name);
         console.log('HEREERERERERERE')
-        console.log(node)
+    
                                                      }
                                    
     for ( j = 0; j < graphP.elements.edges.length; j++) {  
         console.log('EEEEDGES')
-        var edge = graph.newEdge({source: graphP.elements.edges[j].data.source},
-                                 {target: graphP.elements.edges[j].data.target},
+        graph.newEdge(testing1, testing2)
+        var edge = graph.newEdge(graphP.elements.edges[j].data.source,
+                                 graphP.elements.edges[j].data.target,
                                 {mass: graphP.elements.edges[j].data.mass});
         console.log(edge)
     }
