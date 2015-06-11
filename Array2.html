@@ -1,4 +1,3 @@
-	
 
 <html>
 <head>
@@ -26,6 +25,8 @@
         var Nmass = graphP.elements.nodes[i].data.mass;
         console.log('mass');
         console.log(graphP.elements.nodes[i].data.mass);
+        console.log('Nmass');
+        console.log(Nmass);
         console.log('node id');
         console.log(graphP.elements.nodes[i].data.id);
         console.log('station_name');
@@ -44,8 +45,7 @@
     var graph = new Springy.Graph();
     
     for ( i = 0; i < graphP.elements.nodes.length; i++) {  
-        var node = graph.newNode({id: graphP.elements.nodes[i].data.id}, 
-                                {mass: graphP.elements.nodes[i].data.mass} );
+        var node = graph.newNode({id: graphP.elements.nodes[i].data.id}, {mass: graphP.elements.nodes[i].data.mass} );
         console.log('node')
         console.log('HEREERERERERERE')
         console.log(node)
@@ -54,7 +54,8 @@
     for ( j = 0; j < graphP.elements.edges.length; j++) {  
         console.log('EEEEDGES')
         var edge = graph.newEdge({source: graphP.elements.edges[j].data.source},
-                                 {target: graphP.elements.edges[j].data.target});
+                                 {target: graphP.elements.edges[j].data.target},
+                                {mass: graphP.elements.edges[j].data.mass});
         console.log(edge)
     }
         
