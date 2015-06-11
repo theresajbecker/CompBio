@@ -32,7 +32,7 @@
         console.log(graphP.elements.nodes[i].data.station_name);
     }
         
-    for (var j = 0; i < graphP.elements.edges.length; i++) {
+    for (i = 0; i < graphP.elements.edges.length; i++) {
         var Nnode = graphP.elements.edges[i].data.source;
         console.log('edges source');
         console.log(graphP.elements.edges[i].data.source);
@@ -54,7 +54,7 @@
     
 
           
-    for ( j = 0; i < graphP.elements.edges.length; i++) {  
+    for ( i = 0; i < graphP.elements.edges.length; i++) {  
         var edge = graph.newEdge({source: graphP.elements.edges[i].data.target},
                                  {target: graphP.elements.edges[i].data.target});
     }
