@@ -50,42 +50,48 @@
       "data" : {
         "id" : "1",
         "source" : "8220",
-        "target" : "8221"
+        "target" : "8221", 
+        "mass": 4
       },
       "selected" : false
     }, {
       "data" : {
         "id" : "2",
         "source" : "5901",
-        "target" : "5902"
+        "target" : "5902",
+         "mass": 4
       },
       "selected" : false
     }, {
       "data" : {
         "id" : "3",
         "source" : "5902",
-        "target" : "8220"
+        "target" : "8220",
+         "mass": 4
       },
       "selected" : false
     }, {
       "data" : {
         "id" : "4",
         "source" : "5901",
-        "target" : "8221"
+        "target" : "8221",
+         "mass": 4
       },
       "selected" : false
     }, {
       "data" : {
         "id" : "5",
         "source" : "5901",
-        "target" : "5903"
+        "target" : "5903",
+         "mass": 4
       },
       "selected" : false
     }, {
       "data" : {
         "id" : "6",
         "source" : "5903",
-        "target" : "8221"
+        "target" : "8221",
+         "mass": 4
         
       },
       "selected" : false
@@ -93,7 +99,8 @@
       "data" : {
         "id" : "7",
         "source" : "5903",
-        "target" : "5902"
+        "target" : "5902",
+         "mass": 4
         
       },
       "selected" : false
@@ -101,7 +108,8 @@
       "data" : {
         "id" : "8",
         "source" : "5903",
-        "target" : "8220"
+        "target" : "8220",
+         "mass": 4
         
       },
       "selected" : false
@@ -109,7 +117,8 @@
       "data" : {
         "id" : "9",
         "source" : "8221",
-        "target" : "5902"
+        "target" : "5902",
+         "mass": 4
       },
       "selected" : false
     } ]

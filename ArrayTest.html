@@ -24,21 +24,19 @@
         var Nmass = graphP.elements.nodes[i].data.mass;
         console.log('mass');
         console.log(graphP.elements.nodes[i].data.mass);
-                                                    
-        
         console.log('node id');
         console.log(graphP.elements.nodes[i].data.id);
         console.log('station_name');
         console.log(graphP.elements.nodes[i].data.station_name);
     }
         
-    for (var j = 0; i < graphP.elements.edges.length; i++) {
-        var Nnode = graphP.elements.edges[i].data.source;
+    for (var j = 0; j < graphP.elements.edges.length; j++) {
+        console.log('edges id');
+        console.log(graphP.elements.edges[j].data.id);
         console.log('edges source');
-        console.log(graphP.elements.edges[i].data.source);
+        console.log(graphP.elements.edges[j].data.source);
         console.log('edges target');
-        console.log(graphP.elements.edges[i].data.target);
-        //console.log(node)
+        console.log(graphP.elements.edges[j].data.target);
         }
     
     var graph = new Springy.Graph();
@@ -46,17 +44,15 @@
 
 
     
-    for ( i = 0; i < graphP.elements.nodes.length; i++) 
-                                                     {  
+    for ( i = 0; i < graphP.elements.nodes.length; i++) {  
         var node = graph.newNode({ label: 'graphP.elements.nodes[i].data.id'});
                                                      }
                                 
-    
 
           
-    for ( j = 0; i < graphP.elements.edges.length; i++) {  
-        var edge = graph.newEdge({source: graphP.elements.edges[i].data.target},
-                                 {target: graphP.elements.edges[i].data.target});
+    for ( j = 0; j < graphP.elements.edges.length; j++) {  
+        var edge = graph.newEdge({source: graphP.elements.edges[j].data.target},
+                                 {target: graphP.elements.edges[j].data.target});
     }
         
 
