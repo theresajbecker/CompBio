@@ -23,12 +23,11 @@ This demo gives examples of
     console.log(expJson)
     //taking out style load
     var elements = expJson.elements;
-    console.log("ELEMENTS")
+    
     console.log(elements )
     loading.classList.add('loaded');
     
     var cy = window.cy = cytoscape({
-
       container: document.getElementById('cy'),
       //changing layout to cola from { name: 'preset' },
       //layout: { name: 'preset' },
