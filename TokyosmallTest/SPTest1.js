@@ -16,19 +16,19 @@ This demo gives examples of
     type: 'GET',
     dataType: 'json'
   }).done(function(graphP) {  
-
-  
-  function initCy(){
+    console.log(graphP)
 
     var loading = document.getElementById('loading');
-    var expJson = graphP[0];
+    var expJson = graphP;
+    console.log(expJson)
     //taking out style load
-    var styleJson = graphP[1];
     var elements = expJson.elements;
-    console.log(loading )
+    console.log("ELEMENTS")
+    console.log(elements )
     loading.classList.add('loaded');
     
     var cy = window.cy = cytoscape({
+
       container: document.getElementById('cy'),
       //changing layout to cola from { name: 'preset' },
       //layout: { name: 'preset' },
@@ -41,7 +41,7 @@ This demo gives examples of
       //attempting to change the style and layout
       //layout: 'springy',
       //taking out style
-      style: styleJson,
+      //style: styleJson,
       elements: elements,
       animate: true, // whether to show the layout as it's running
       maxSimulationTime: 4000, // max length in ms to run the layout
@@ -61,16 +61,9 @@ This demo gives examples of
 
     }); // end init cytoscape
 
-jQuery(function(){
-  var springy = window.springy = jQuery('#springydemo').springy({
-    graph: graph,
-    nodeSelected: function(node){
-      console.log('Node selected: ' + JSON.stringify(node.data));
-    }
-  });
-}); 
 
-  } // end init cy
+
+
 }); // end graphP function 
 }); // dom ready 
 

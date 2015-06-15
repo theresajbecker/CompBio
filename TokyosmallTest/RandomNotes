@@ -1,0 +1,60 @@
+  $.ajax({
+    url: 'https://rawgit.com/theresajbecker/CompBio/master/TokyosmallTest/Tokyosmall2.json',
+    type: 'GET',
+    dataType: 'json'
+  }).done(function(graphP) {  
+
+    for (var i = 0; i < graphP.elements.nodes.length; i++) {  
+        var node = graphP.elements.nodes[i].data.id;
+        
+        console.log('node id');
+        console.log(graphP.elements.nodes[i].data.id);
+        console.log('station_name');
+        console.log(graphP.elements.nodes[i].data.station_name);
+    };
+        
+    for (var i = 0; i < graphP.elements.edges.length; i++) {
+        var node = graphP.elements.edges[i].data.source;
+        console.log('edges source');
+        console.log(graphP.elements.edges[i].data.source);
+        console.log('edges target');
+        console.log(graphP.elements.edges[i].data.target);
+        //console.log(node)
+        };
+    
+    //var graph = new Springy.Graph();
+    
+
+
+    
+    for (var i = 0; i < graphP.elements.nodes.length; i++) 
+                                                     {  
+        var node = graph.newNode({ label: 'graphP.elements.nodes[i].data.id'});
+                                                     };
+                                
+    
+
+          
+    for (var i = 0; i < graphP.elements.edges.length; i++) {  
+        var edge = graph.newEdge({source: graphP.elements.edges[i].data.target},
+                                 {target: graphP.elements.edges[i].data.target});
+    };
+        
+
+
+$(document).ready(function(){
+  var springy = window.springy = jQuery('#springydemo').springy({
+    graph: graph,
+    nodeSelected: function(node){
+      console.log('Node selected: ' + JSON.stringify(node.data));
+    },
+    repulsion: 500
+    }); 
+
+});  
+    
+    
+
+    
+
+});

@@ -47,7 +47,7 @@ $(function(){
       container: document.getElementById('cy'),
       //changing layout to cola from { name: 'preset' },
       //layout: { name: 'preset' },
-      layout: 'cola',
+      layout: 'cose',
        // layout: {
        //  name: 'springy',
        //  padding: 10,
