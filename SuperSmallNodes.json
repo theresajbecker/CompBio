@@ -12,7 +12,7 @@
   "elements" : {
     "nodes" : [ {
       "data" : {
-        "label" : "8220",
+        "id" : "8220",
         "station_name" : "京成高砂",
         "mass" : 1,
     
@@ -21,28 +21,28 @@
       "selected" : false
     }, {
       "data" : {
-        "label" : "8221",
+        "id" : "8221",
         "station_name" : "新柴又",
         "mass" : 20
         },
       "selected" : false
     }, {
       "data" : {
-        "label" : "5901",
+        "id" : "5901",
         "station_name" : "日本橋",
         "mass" : 45
       },
       "selected" : false
     }, {
       "data" : {
-        "label" : "5902",
+        "id" : "5902",
         "station_name" : "京橋",
         "mass" : 100
       },
       "selected" : false
     }, {
       "data" : {
-        "label" : "5903",
+        "id" : "5903",
         "station_name" : "銀座",
         "mass" : 2
       },
@@ -50,7 +50,7 @@
     } ], 
     "edges" : [ {
       "data" : {
-        "label" : "1",
+        "id" : "1",
         "source" : "8220",
         "target" : "8221", 
         "mass": 4
@@ -58,7 +58,7 @@
       "selected" : false
     }, {
       "data" : {
-        "label" : "2",
+        "id" : "2",
         "source" : "5901",
         "target" : "5902",
          "mass": 4
@@ -66,7 +66,7 @@
       "selected" : false
     }, {
       "data" : {
-        "label" : "3",
+        "id" : "3",
         "source" : "5902",
         "target" : "8220",
          "mass": 4
@@ -74,7 +74,7 @@
       "selected" : false
     }, {
       "data" : {
-        "label" : "4",
+        "id" : "4",
         "source" : "5901",
         "target" : "8221",
          "mass": 4
@@ -82,7 +82,7 @@
       "selected" : false
     }, {
       "data" : {
-        "label" : "5",
+        "id" : "5",
         "source" : "5901",
         "target" : "5903",
          "mass": 4
@@ -90,7 +90,7 @@
       "selected" : false
     }, {
       "data" : {
-        "label" : "6",
+        "id" : "6",
         "source" : "5903",
         "target" : "8221",
          "mass": 4
@@ -99,7 +99,7 @@
       "selected" : false
     }, {
       "data" : {
-        "label" : "7",
+        "id" : "7",
         "source" : "5903",
         "target" : "5902",
          "mass": 4
@@ -107,7 +107,7 @@
       "selected" : false
     }, {
       "data" : {
-        "label" : "8",
+        "id" : "8",
         "source" : "5903",
         "target" : "8220",
          "mass": 4
@@ -115,7 +115,7 @@
       "selected" : false
     }, {
       "data" : {
-        "label" : "9",
+        "id" : "9",
         "source" : "8221",
         "target" : "5902",
          "mass": 4
