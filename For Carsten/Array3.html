@@ -1,0 +1,68 @@
+
+<html>
+<head>
+  <title>Springy.js image node demo</title>
+</head>
+<body>
+<script src="jquery-1.11.3.js"></script>
+<script src="springy.js"></script>
+<script src="springyui.js"></script>
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+     
+<script/>  
+$(document).ready(function(){
+  $.ajax({
+    url: 'https://rawgit.com/theresajbecker/CompBio/master/SuperSmallNodes.json',
+    type: 'GET',
+    dataType: 'json'
+  }).done(function(graphP) {  
+    
+    console.log(graphP);
+
+    
+    var graph = new Springy.Graph();
+    
+    for ( i = 0; i < graphP.elements.nodes.length; i++) { 
+        var Nlabel1 =  graphP.elements.nodes[i].data.label
+        var Nlabel2 =  graphP.elements.nodes[i++].data.label
+        console.log('Nlabel1')
+        console.log(Nlabel1)
+        var NLNode1 = graph.newNode({label: Nlabel1});
+        console.log(NLNode1)
+        console.log('Nlabe2')
+        console.log(Nlabel2)
+        var NLNode2 = graph.newNode({label: Nlabel2});
+        console.log(NLNode2)
+        graph.newEdge(NLNode1, NLNode2)
+        console.log(graph.newEdge(NLNode1, NLNode2))
+            
+    
+                                                     }
+
+        
+
+
+    
+        console.log('WINDOW')
+jQuery(function(){
+  var springy = window.springy = jQuery('#springydemo').springy({
+    graph: graph,
+    nodeSelected: function(node){
+      console.log('Node selected: ' + JSON.stringify(node.data));
+    }
+  });
+});
+
+    });  
+        
+
+});
+</script>
+    <div>
+<canvas id="springydemo" width="800" height="400" style="border: 1px solid black;"></canvas>
+</div>
+
+
+</body>
+</html>
