@@ -29,7 +29,7 @@ This demo gives examples of
       container: document.getElementById('cy'),
       //changing layout to cola from { name: 'preset' },
       //layout: { name: 'preset' },
-      layout: 'cose',
+      layout: 'cola',
        // layout: {
        //  name: 'springy',
        //  padding: 10,
