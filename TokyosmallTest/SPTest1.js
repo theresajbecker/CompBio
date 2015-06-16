@@ -20,7 +20,7 @@ This demo gives examples of
 
     var loading = document.getElementById('loading');
     var expJson = graphP;
-    console.log(expJson)
+    console.log(expJson);
     //taking out style load
     var elements = expJson.elements;
     console.log(elements )

@@ -38,7 +38,7 @@ This demo gives examples of
       //attempting to change the style and layout
       //layout: 'springy',
       //taking out style
-      style: styleJson,
+      //style: styleJson,
       elements: elements,
       animate: true, // whether to show the layout as it's running
       maxSimulationTime: 4000, // max length in ms to run the layout

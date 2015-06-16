@@ -1,0 +1,125 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.1.1",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "selected" : true,
+    "__Annotations" : [ "" ],
+    "shared_name" : "main_islands_japan(1)",
+    "SUID" : 20760,
+    "name" : "tokyo_only"
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "label" : "8220",
+        "station_name" : "京成高砂",
+        "id" : 1
+
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "label" : "8221",
+        "station_name" : "新柴又",
+        "id" : 20
+        },
+      "selected" : false
+    }, {
+      "data" : {
+        "label" : "5901",
+        "station_name" : "日本橋",
+        "id" : 45
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "label" : "5902",
+        "station_name" : "京橋",
+        "id" : 100
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "label" : "5903",
+        "station_name" : "銀座",
+        "id" : 2
+      },
+      "selected" : false
+    } ], 
+    "edges" : [ {
+      "data" : {
+        "label" : "1",
+        "source" : "8220",
+        "target" : "8221", 
+        "id": 4
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "label" : "2",
+        "source" : "5901",
+        "target" : "5902",
+         "id": 4
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "label" : "3",
+        "source" : "5902",
+        "target" : "8220",
+         "id": 4
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "label" : "4",
+        "source" : "5901",
+        "target" : "8221",
+         "id": 4
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "label" : "5",
+        "source" : "5901",
+        "target" : "5903",
+         "id": 4
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "label" : "6",
+        "source" : "5903",
+        "target" : "8221",
+         "id": 4
+        
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "label" : "7",
+        "source" : "5903",
+        "target" : "5902",
+         "id": 4
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "label" : "8",
+        "source" : "5903",
+        "target" : "8220",
+         "id": 4
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "label" : "9",
+        "source" : "8221",
+        "target" : "5902",
+         "id": 4
+      },
+      "selected" : false
+    } ]
+  }
+}
