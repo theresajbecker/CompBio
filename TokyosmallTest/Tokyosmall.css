@@ -12,15 +12,10 @@ html, body {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #B8860B;
+  background: #FAEBD7;
 
 }
-
-#cy.node {
-  content: data(station_name);
-  background-color: white;
-  border-color: black;
-}
+/*
 
 #loading {
   position: absolute;
@@ -74,4 +69,4 @@ body.has-start:not(.has-end) #start {
 
 body.calc #loading {
   display: block;
-}
+}*/

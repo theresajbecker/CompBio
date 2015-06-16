@@ -33,12 +33,21 @@ This demo gives examples of
       style: cytoscape.stylesheet()
         .selector('node')
           .css({
-            'content': 'data(station_name)',
+            'content': 'data(id)',
+            'font-size' : 'mapData(weight, 0, 100, 0, 10)',
+            'height': 'mapData(weight, 0, 100, 10, 50)',
+            'width': 'mapData(weight, 0, 100, 10, 50)',
+            
+            'color' : 'black',
+            //node opacity 
+            'background-opacity': 'mapData(weight, 0, 100, 0, 1)',
+            'border-opacity': 'mapData(weight, 0, 100, 0, 1)',
+            //text-opacity is for both background and outline
+            'text-opacity': 'mapData(weight, 0, 100, .5, 1)',
             'text-valign': 'center',
             'text-outline-width': 1,
             'text-outline-color': 'black',
-            'background-color': 'black',
-            'color': '#888'
+            'background-color': 'mapData(weight, 40, 100, yellow, red)',
       })
     .selector(':selected')
       .css({
@@ -47,8 +56,9 @@ This demo gives examples of
       })
     .selector('edge')
       .css({
-        'opacity': 0.666,
-        'line-color': 'white',
+        'opacity': 'mapData(weight, 0, 100, .5, 1)',
+        'width': 'mapData(weight, 0, 100, 0, 3)',
+        'line-color': 'black',
       }),
       layout: {
         name: 'cose',
