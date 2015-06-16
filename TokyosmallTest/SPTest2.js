@@ -19,10 +19,9 @@ This demo gives examples of
     console.log(graphP)
 
     var loading = document.getElementById('loading');
-    var expJson = graphP;
-    console.log(expJson)
+    console.log(graphP);
     //taking out style load
-    var elements = expJson.elements;
+    var elements = graphP.elements;
     console.log(elements )
     loading.classList.add('loaded');
     
@@ -30,7 +29,7 @@ This demo gives examples of
       container: document.getElementById('cy'),
       //changing layout to cola from { name: 'preset' },
       //layout: { name: 'preset' },
-      layout: 'springy',
+      layout: 'cose',
        // layout: {
        //  name: 'springy',
        //  padding: 10,
@@ -39,7 +38,7 @@ This demo gives examples of
       //attempting to change the style and layout
       //layout: 'springy',
       //taking out style
-      //style: styleJson,
+      style: styleJson,
       elements: elements,
       animate: true, // whether to show the layout as it's running
       maxSimulationTime: 4000, // max length in ms to run the layout
@@ -57,12 +56,7 @@ This demo gives examples of
       repulsion: 400,
       damping: 0.5
 
-    }); // end init cytoscape
-
-
-
+    }); // end init
 
 }); // end graphP function 
 }); // dom ready 
-
-
