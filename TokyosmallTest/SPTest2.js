@@ -11,34 +11,50 @@ This demo gives examples of
 */
 
   $(document).ready(function(){
+
    var graphP = $.ajax({
     url: 'https://rawgit.com/theresajbecker/CompBio/master/TokyosmallTest/CYJSSmallNode.json',
     type: 'GET',
     dataType: 'json'
   }).done(function(graphP) {  
+
     console.log(graphP)
 
     var loading = document.getElementById('loading');
+
     console.log(graphP);
-    //taking out style load
+   
     var elements = graphP.elements;
     console.log(elements )
     loading.classList.add('loaded');
     
     var cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
-      //changing layout to cola from { name: 'preset' },
-      //layout: { name: 'preset' },
-      layout: 'cola',
-       // layout: {
-       //  name: 'springy',
-       //  padding: 10,
-       //  edgeLength : 'data(weight)',
-       //  },
-      //attempting to change the style and layout
-      //layout: 'springy',
-      //taking out style
-      //style: styleJson,
+      style: cytoscape.stylesheet()
+        .selector('node')
+          .css({
+            'content': 'data(station_name)',
+            'text-valign': 'center',
+            'text-outline-width': 1,
+            'text-outline-color': 'black',
+            'background-color': 'black',
+            'color': '#888'
+      })
+    .selector(':selected')
+      .css({
+        'border-width': 3,
+        'border-color': '#333'
+      })
+    .selector('edge')
+      .css({
+        'opacity': 0.666,
+        'line-color': 'white',
+      }),
+      layout: {
+        name: 'cose',
+        paddint: 10
+      },
+
       elements: elements,
       animate: true, // whether to show the layout as it's running
       maxSimulationTime: 4000, // max length in ms to run the layout

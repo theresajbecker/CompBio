@@ -29,21 +29,21 @@
       "data" : {
         "id" : "5901",
         "station_name" : "Node5901",
-       "weight" : 45
+       "weight" : 60
       },
       "selected" : false
     }, {
       "data" : {
         "id" : "5902",
         "station_name" : "Node5902",
-       "weight" : 1
+       "weight" : 80
       },
       "selected" : false
     }, {
       "data" : {
         "id" : "5903",
         "station_name" : "Node5903",
-       "weight" : 2
+       "weight" : 100
       },
       "selected" : false
     } ], 

@@ -12,7 +12,14 @@ html, body {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #000;
+  background: #B8860B;
+
+}
+
+#cy.node {
+  content: data(station_name);
+  background-color: white;
+  border-color: black;
 }
 
 #loading {
