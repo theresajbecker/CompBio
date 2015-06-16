@@ -36,7 +36,7 @@
       "data" : {
         "id" : "5902",
         "station_name" : "Node5902",
-       "weight" : 10000
+       "weight" : 1
       },
       "selected" : false
     }, {
@@ -68,7 +68,7 @@
         "id" : "3",
         "source" : "5902",
         "target" : "8220",
-        "weight": 1000
+        "weight": 1
       },
       "selected" : false
     }, {
