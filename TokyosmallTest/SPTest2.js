@@ -12,7 +12,7 @@ This demo gives examples of
 
   $(document).ready(function(){
    var graphP = $.ajax({
-    url: 'https://rawgit.com/theresajbecker/CompBio/master/SuperSmallNodes.json',
+    url: 'https://rawgit.com/theresajbecker/CompBio/master/TokyosmallTest/CYJSSmallNode.json',
     type: 'GET',
     dataType: 'json'
   }).done(function(graphP) {  
