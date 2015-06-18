@@ -33,4 +33,49 @@
     "total_mutations": "27", 
     "source": "PCDHAC2"
   }
+}{
+  "data": {
+    "total_mutations": "6", 
+    "source": "ZFHX4"
+  }
+}{
+  "data": {
+    "total_mutations": "5", 
+    "source": "VCAN"
+  }
+}{
+  "data": {
+    "total_mutations": "12", 
+    "source": "PEG3"
+  }
+}{
+  "data": {
+    "total_mutations": "2", 
+    "source": "ZNF536"
+  }
+}{
+  "data": {
+    "total_mutations": "2", 
+    "source": "RP1L1"
+  }
+}{
+  "data": {
+    "total_mutations": "1", 
+    "source": "SPTA1"
+  }
+}{
+  "data": {
+    "total_mutations": "3", 
+    "source": "TNN"
+  }
+}{
+  "data": {
+    "total_mutations": "1", 
+    "source": "TAF1L"
+  }
+}{
+  "data": {
+    "total_mutations": "4", 
+    "source": "PCDHGC5"
+  }
 }

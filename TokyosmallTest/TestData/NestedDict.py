@@ -18,8 +18,7 @@ with open ("N2.json", "r") as myfile:
     print type(Ndata)
     print "Ndata", Ndata
     
-    NewNdata = {Ndata}
-    print type(NewNdata)
+
 
 # for i in Ndata.items():
 #    	if value not in Edata.values():
