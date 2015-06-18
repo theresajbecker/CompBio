@@ -45,6 +45,6 @@ result = json.dumps(target, default=set_default, indent = 1).replace("\\","").re
 #print json.dumps(target, indent = 3)
 
 f = open( 'DICTTEST.json', 'w' )
-f.write(result + '\n' )
+f.write(result )
 f.close()
 
