@@ -13,7 +13,7 @@ This demo gives examples of
   $(document).ready(function(){
 
    var graphP = $.ajax({
-    url: 'https://rawgit.com/theresajbecker/CompBio/master/TestJson.json',
+    url: 'https://rawgit.com/theresajbecker/CompBio/master/TokyosmallTest/TestData/DICTTEST.json',
     type: 'GET',
     dataType: 'json'
   }).done(function(graphP) {  
@@ -34,16 +34,16 @@ This demo gives examples of
         .selector('node')
           .css({
             'content': 'data(source)',
-            'font-size' : 'mapData(total_mutations, 0, 100, 0, 10)',
-            'height': 'mapData(total_mutations, 0, 100, 10, 50)',
-            'width': 'mapData(total_mutations, 0, 100, 10, 50)',
+            'font-size' : 'mapData(total_mutations, 0, 10, 0, 10)',
+            'height': 'mapData(total_mutations, 0, 10, 10, 50)',
+            'width': 'mapData(total_mutations, 0, 10, 10, 50)',
             
             'color' : 'black',
             //node opacity 
-            'background-opacity': 'mapData(total_mutations, 0, 100, 0, 1)',
-            'border-opacity': 'mapData(total_mutations, 0, 100, 0, 1)',
+            'background-opacity': 'mapData(total_mutations, 0, 10, 0, 1)',
+            'border-opacity': 'mapData(total_mutations, 0, 10, 0, 1)',
             //text-opacity is for both background and outline
-            'text-opacity': 'mapData(total_mutations, 0, 100, .5, 1)',
+            'text-opacity': 'mapData(total_mutations, 0, 10, 1, 1)',
             'text-valign': 'center',
             'text-outline-width': 1,
             'text-outline-color': 'black',
@@ -56,8 +56,8 @@ This demo gives examples of
       })
     .selector('edge')
       .css({
-        'opacity': 'mapData(total_mutations, 0, 100, .5, 1)',
-        'width': 'mapData(total_mutations, 0, 100, 0, 3)',
+        'opacity': 'mapData(total_mutations, 0, 10, 1, 1)',
+        'width': 'mapData(total_mutations, 0, 10, 0, 3)',
         'line-color': 'black',
       }),
       layout: {
