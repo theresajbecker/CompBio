@@ -1,4 +1,14 @@
 {
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.1.1",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "selected" : true,
+    "__Annotations" : [ "" ],
+    "shared_name" : "main_islands_japan(1)",
+    "SUID" : 20760,
+    "name" : "tokyo_only"
+  },
  "elements": {
   "nodes": {
 "data": [
