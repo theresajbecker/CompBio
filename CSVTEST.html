@@ -1,0 +1,77 @@
+
+<html>
+<head>
+  <title>Springy.js image node demo</title>
+</head>
+<body>
+<script src="jquery-1.11.3.js"></script>
+<script src="springy.js"></script>
+<script src="springyui.js"></script>
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+     
+<script/>  
+$(document).ready(function(){
+  $.ajax({
+    url: 'https://rawgit.com/theresajbecker/CompBio/master/SuperSmallNodes.json',
+    type: 'GET',
+    dataType: 'json'
+  }).done(function(graphP) {  
+    console.log("DATAAAAAAAAAAAAAA")
+    console.log(graphP);
+
+    
+
+    var nodeArray = []
+
+    for ( i = 0  ; i < graphP.elements.nodes.length ; i++ ) { 
+        var Nlabel1 =  {graphP.elements.nodes[i].data.label, graphP.elements.nodes[i].data.mass}
+        var Nmass =  graphP.elements.nodes[i].data.mass
+
+        var NN1 = graph.newNode({label: Nlabel1}, {'text-outline-width': Nmass});
+        nodeArray.push(Nlabel1)
+        }
+        console.log(nodeArray)
+
+        function getByValue(arr, value) {
+          for (var n=0; n < nodeArray.length; n++) {
+            if (arr[n].data.label == value) {
+            return arr[n];
+            }
+          }
+        }
+
+
+        function getSourceNode(graphP) {
+          for (var s=0; s < graphP.elements.edges.length; s++) {
+            var getSource = graphP.elements.edges[s].data.source
+            var getTarget = graphP.elements.edges[s].data.target
+
+        }
+        }
+
+    getSourceNode(graphP)
+
+    
+        console.log('WINDOWWWWWW')
+jQuery(function(){
+  var springy = window.springy = jQuery('#springydemo').springy({
+    graph: graph,
+    nodeSelected: function(node){
+      console.log('Node selected: ' + JSON.stringify(node.data));
+    }
+  });
+}); 
+
+    });  
+        
+
+});
+</script>
+    <div>
+<canvas id="springydemo" width="800" height="400" style="border: 1px solid black;"></canvas>
+</div>
+
+
+</body>
+</html>

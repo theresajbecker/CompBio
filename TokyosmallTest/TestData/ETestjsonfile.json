@@ -1,0 +1,55 @@
+{
+     "count": "count", 
+     "source": "source", 
+     "target": "target"
+}
+{
+     "count": "27", 
+     "source": "RYR2", 
+     "target": "ZFHX4"
+}
+{
+     "count": "44", 
+     "source": "PCDHAC2", 
+     "target": "ZFHX4"
+}
+{
+     "count": "28", 
+     "source": "PCDHAC2", 
+     "target": "VCAN"
+}
+{
+     "count": "46", 
+     "source": "PCDHAC2", 
+     "target": "PEG3"
+}
+{
+     "count": "37", 
+     "source": "PCDHAC2", 
+     "target": "ZNF536"
+}
+{
+     "count": "46", 
+     "source": "PCDHAC2", 
+     "target": "RP1L1"
+}
+{
+     "count": "58", 
+     "source": "PCDHAC2", 
+     "target": "SPTA1"
+}
+{
+     "count": "26", 
+     "source": "PCDHAC2", 
+     "target": "TNN"
+}
+{
+     "count": "31", 
+     "source": "PCDHAC2", 
+     "target": "TAF1L"
+}
+{
+     "count": "119", 
+     "source": "PCDHAC2", 
+     "target": "PCDHGC5"
+}
