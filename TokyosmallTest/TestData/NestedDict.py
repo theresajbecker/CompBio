@@ -16,7 +16,7 @@ with open ("NTestjsonfile.json", "r") as myfile:
     Ndata = Nodedata
     Edata = Edgedata
 
-    target =  {"elements" : {'node': {'data': {Ndata}}, 'edge':{'data': {Edata}} } }
+    target =  {"elements" : {'nodes': {'data': {Ndata}}, 'edges':{'data': {Edata}} } }
 
 def set_default(obj):
    if isinstance(obj, set):
