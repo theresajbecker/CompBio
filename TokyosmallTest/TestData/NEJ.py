@@ -12,20 +12,37 @@ Ejsonfile = open('E2.json', 'wb')
 Efieldnames = ("source","target","count")
 #creating reader 
 Ereader = csv.DictReader( Edgecsvfile, Efieldnames)
-for row in Ereader:
-	edtest = {'data': row}
-	json.dump(edtest, Ejsonfile, indent = 3)
-Ejsonfile.write('\n')
-
-
 Nodecsvfile = open('SmallNode.csv', 'r')
 Njsonfile = open('N2.json', 'wb')
 
 Nfieldnames = ("source","total_mutations")
 Nreader = csv.DictReader( Nodecsvfile, Nfieldnames)
+
+#print "EEEEEEEEEEE reader", Ereader
+
+
+holding = []
+
+for row in Ereader:
+	if row['source'] == 'source':
+		pass
+	else:
+		print "EEEEEE Row", row
+		edtest = {'data': row}
+		holding.append(row['source'])
+		holding.append(row['target'])
+		print "HOLDING", holding
+		#print edtest
+		json.dump(edtest, Ejsonfile, indent = 3)
+Ejsonfile.write('\n')
+
+
 for row in Nreader:
-	ndtest = {'data': row}
-	json.dump(ndtest, Njsonfile, indent = 2)
+	if row['source'] in holding:
+		ndtest = {'data': row}
+		json.dump(ndtest, Njsonfile, indent = 2)
+	else:
+		pass
 Njsonfile.write('\n')
 
 

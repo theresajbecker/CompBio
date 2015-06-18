@@ -1,11 +1,5 @@
 {
    "data": {
-      "count": "count", 
-      "source": "source", 
-      "target": "target"
-   }
-}{
-   "data": {
       "count": "27", 
       "source": "RYR2", 
       "target": "ZFHX4"

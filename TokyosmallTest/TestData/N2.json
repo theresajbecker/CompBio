@@ -1,111 +1,36 @@
 {
   "data": {
-    "total_mutations": "total_mutations", 
-    "source": "source"
-  }
-}{
-  "data": {
     "total_mutations": "7", 
-    "source": "VAT1L"
-  }
-}{
-  "data": {
-    "total_mutations": "3", 
-    "source": "ZNF724P"
-  }
-}{
-  "data": {
-    "total_mutations": "1", 
-    "source": "TMEM69"
+    "source": "RYR2"
   }
 }{
   "data": {
     "total_mutations": "9", 
-    "source": "TMEM68"
+    "source": "PCDHAC2"
   }
 }{
   "data": {
     "total_mutations": "12", 
-    "source": "TMEM67"
+    "source": "PCDHAC2"
   }
 }{
   "data": {
     "total_mutations": "4", 
-    "source": "TMEM66"
+    "source": "RYR2"
   }
 }{
   "data": {
     "total_mutations": "8", 
-    "source": "KIAA0528"
-  }
-}{
-  "data": {
-    "total_mutations": "1", 
-    "source": "CCNYL1"
+    "source": "PCDHAC2"
   }
 }{
   "data": {
     "total_mutations": "4", 
-    "source": "TMEM64"
-  }
-}{
-  "data": {
-    "total_mutations": "3", 
-    "source": "TMEM62"
-  }
-}{
-  "data": {
-    "total_mutations": "4", 
-    "source": "SDHAF2"
-  }
-}{
-  "data": {
-    "total_mutations": "8", 
-    "source": "PRPF8"
-  }
-}{
-  "data": {
-    "total_mutations": "8", 
-    "source": "PRPF6"
-  }
-}{
-  "data": {
-    "total_mutations": "4", 
-    "source": "LOC200726"
-  }
-}{
-  "data": {
-    "total_mutations": "2", 
-    "source": "PRPF4"
-  }
-}{
-  "data": {
-    "total_mutations": "4", 
-    "source": "PRPF3"
-  }
-}{
-  "data": {
-    "total_mutations": "1", 
-    "source": "JOSD2"
-  }
-}{
-  "data": {
-    "total_mutations": "1", 
-    "source": "OBP2B"
+    "source": "RYR2"
   }
 }{
   "data": {
     "total_mutations": "27", 
-    "source": "AOX1"
-  }
-}{
-  "data": {
-    "total_mutations": "6", 
-    "source": "OBP2A"
-  }
-}{
-  "data": {
-    "total_mutations": "2", 
-    "source": "ZC2HC1C"
+    "source": "PCDHAC2"
   }
 }

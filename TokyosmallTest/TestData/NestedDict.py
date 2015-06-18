@@ -15,7 +15,18 @@ with open ("N2.json", "r") as myfile:
 
     Ndata = Nodedata
     Edata = Edgedata
-  
+    print type(Ndata)
+    print "Ndata", Ndata
+    
+    NewNdata = {Ndata}
+    print type(NewNdata)
+
+# for i in Ndata.items():
+#    	if value not in Edata.values():
+#    		pass
+#    	else:
+#        	NewNdata[key] = value
+# print NewNdata
 
     target =  {"elements" : {'nodes': {Ndata} , 'edges': {Edata}  } }
     #trying something else
@@ -29,7 +40,7 @@ def set_default(obj):
 
 result = json.dumps(target, default=set_default, indent = 1).replace("\\","").replace("}{", "},{").replace("   ", "").replace("\"{", "{").replace("}\"", "}")
 #.replace("\"nodes\":", "\"nodes\": [").replace("\"data\": [", "\"data\" :  ").replace("\"edges\":", "\"edges\" : [")
-print result
+#print result
  
 
 #print json.dumps(target, indent = 3)
