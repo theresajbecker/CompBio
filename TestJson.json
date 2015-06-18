@@ -1,0 +1,167 @@
+{
+    "format_version": "1.0",
+    "generated_by": "cytoscape-3.1.1",
+    "target_cytoscapejs_version": "~2.1",
+    "data": {
+        "selected": true,
+        "__Annotations": [
+            ""
+        ],
+        "shared_name": "main_islands_japan(1)",
+        "SUID": 20760,
+        "name": "tokyo_only"
+    },
+    "elements": {
+        "nodes": {
+            "data": [
+                {
+                    "total_mutations": "total_mutations",
+                    "source": "source"
+                },
+                {
+                    "total_mutations": "7",
+                    "source": "VAT1L"
+                },
+                {
+                    "total_mutations": "3",
+                    "source": "ZNF724P"
+                },
+                {
+                    "total_mutations": "1",
+                    "source": "TMEM69"
+                },
+                {
+                    "total_mutations": "9",
+                    "source": "TMEM68"
+                },
+                {
+                    "total_mutations": "12",
+                    "source": "TMEM67"
+                },
+                {
+                    "total_mutations": "4",
+                    "source": "TMEM66"
+                },
+                {
+                    "total_mutations": "8",
+                    "source": "KIAA0528"
+                },
+                {
+                    "total_mutations": "1",
+                    "source": "CCNYL1"
+                },
+                {
+                    "total_mutations": "4",
+                    "source": "TMEM64"
+                },
+                {
+                    "total_mutations": "3",
+                    "source": "TMEM62"
+                },
+                {
+                    "total_mutations": "4",
+                    "source": "SDHAF2"
+                },
+                {
+                    "total_mutations": "8",
+                    "source": "PRPF8"
+                },
+                {
+                    "total_mutations": "8",
+                    "source": "PRPF6"
+                },
+                {
+                    "total_mutations": "4",
+                    "source": "LOC200726"
+                },
+                {
+                    "total_mutations": "2",
+                    "source": "PRPF4"
+                },
+                {
+                    "total_mutations": "4",
+                    "source": "PRPF3"
+                },
+                {
+                    "total_mutations": "1",
+                    "source": "JOSD2"
+                },
+                {
+                    "total_mutations": "1",
+                    "source": "OBP2B"
+                },
+                {
+                    "total_mutations": "27",
+                    "source": "AOX1"
+                },
+                {
+                    "total_mutations": "6",
+                    "source": "OBP2A"
+                },
+                {
+                    "total_mutations": "2",
+                    "source": "ZC2HC1C"
+                }
+            ]
+        },
+        "edges": {
+            "data": [
+                {
+                    "count": "count",
+                    "source": "source",
+                    "target": "target"
+                },
+                {
+                    "count": "27",
+                    "source": "RYR2",
+                    "target": "ZFHX4"
+                },
+                {
+                    "count": "44",
+                    "source": "PCDHAC2",
+                    "target": "ZFHX4"
+                },
+                {
+                    "count": "28",
+                    "source": "PCDHAC2",
+                    "target": "VCAN"
+                },
+                {
+                    "count": "46",
+                    "source": "PCDHAC2",
+                    "target": "PEG3"
+                },
+                {
+                    "count": "37",
+                    "source": "PCDHAC2",
+                    "target": "ZNF536"
+                },
+                {
+                    "count": "46",
+                    "source": "PCDHAC2",
+                    "target": "RP1L1"
+                },
+                {
+                    "count": "58",
+                    "source": "PCDHAC2",
+                    "target": "SPTA1"
+                },
+                {
+                    "count": "26",
+                    "source": "PCDHAC2",
+                    "target": "TNN"
+                },
+                {
+                    "count": "31",
+                    "source": "PCDHAC2",
+                    "target": "TAF1L"
+                },
+                {
+                    "count": "119",
+                    "source": "PCDHAC2",
+                    "target": "PCDHGC5"
+                }
+            ]
+        }
+    }
+}
