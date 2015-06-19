@@ -33,17 +33,18 @@ This demo gives examples of
       style: cytoscape.stylesheet()
         .selector('node')
           .css({
-            'content': 'data(source)',
-            'font-size' : 'mapData(total_mutations, 0, 10, 0, 10)',
-            'height': 'mapData(total_mutations, 0, 10, 10, 50)',
-            'width': 'mapData(total_mutations, 0, 10, 10, 50)',
+            'content': 'data(id)',
+            // for tot mutations between 0 and 10 map to font size from 0 to 10
+            'font-size' : 'mapData(total_mutations, 5, 10, 10, 100)',
+            'height': 'mapData(total_mutations, 5, 10, 10, 50)',
+            'width': 'mapData(total_mutations, 5, 10, 10, 50)',
             
             'color' : 'black',
             //node opacity 
-            'background-opacity': 'mapData(total_mutations, 0, 10, 0, 1)',
-            'border-opacity': 'mapData(total_mutations, 0, 10, 0, 1)',
+            'background-opacity': 'mapData(total_mutations, 5, 10, 1, 1)',
+            'border-opacity': 'mapData(total_mutations, 5, 10, 1, 1)',
             //text-opacity is for both background and outline
-            'text-opacity': 'mapData(total_mutations, 0, 10, 1, 1)',
+            'text-opacity': 'mapData(total_mutations, 5, 10, 1, 1)',
             'text-valign': 'center',
             'text-outline-width': 1,
             'text-outline-color': 'black',
@@ -56,8 +57,8 @@ This demo gives examples of
       })
     .selector('edge')
       .css({
-        'opacity': 'mapData(total_mutations, 0, 10, 1, 1)',
-        'width': 'mapData(total_mutations, 0, 10, 0, 3)',
+        'opacity': 'mapData(count, 30, 75, 1, 1)',
+        'width': 'mapData(count, 30, 75, 0, 3)',
         'line-color': 'black',
       }),
       layout: {
