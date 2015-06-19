@@ -13,7 +13,7 @@ This demo gives examples of
   $(document).ready(function(){
 
    var graphP = $.ajax({
-    url: 'https://rawgit.com/theresajbecker/CompBio/master/TokyosmallTest/TestData/NetworkJSON.json',
+    url: 'https://rawgit.com/theresajbecker/CompBio/master/TokyosmallTest/TestData/FinalNetwork3-8-25.json',
     type: 'GET',
     dataType: 'json'
   }).done(function(graphP) {  

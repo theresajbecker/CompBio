@@ -48,6 +48,7 @@ for row in Ereader:
 		#json.dump converts the dictionary to a json file (what to write, where to write it, how many columns to indent)
 		json.dump(edtest, Edgejson, indent = 3)
 #writes to the new file 
+print holding
 Edgejson.write('\n')
 
 
