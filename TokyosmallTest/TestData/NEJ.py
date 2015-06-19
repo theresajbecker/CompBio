@@ -1,23 +1,29 @@
-
-
 import csv
 import json
 import sys
 
+#This converts the Node Attribure and Edge Network csv files to the properly formatted Node and Edge json file. 
+#Written by Theresa Becker - Summer Training Fellowship 2015- 
+#Don't mind the misspelled comments! 
+#Happy network visualizing! 
+
+
+
+
 
 #Open Edge file - Network file - 
-Edgecsvfile = open('SmallEdge.csv', 'r')
+Edgecsvfile = open('network3-8-25.csv', 'r')
 #creating new/editing output file 
-Edgejson = open('E2.json', 'wb')
+Edgejson = open('network3-8-25.json', 'wb')
 #Column Headers for edges
 Efieldnames = ("source","target","count")
 #creating reader 
 Ereader = csv.DictReader( Edgecsvfile, Efieldnames)
 
 #Open Node file - Attributes - 
-Nodecsvfile = open('SmallNode.csv', 'r')
+Nodecsvfile = open('node-attributes.csv', 'r')
 #Creating new/editing output file
-Nodejson = open('N2.json', 'wb')
+Nodejson = open('node-attributes.json', 'wb')
 #Column headers for node file NODE HEADER MUST CONTAIN ID in order to be recognized by edges
 Nfieldnames = ("id","total_mutations")
 #Creating Noder reader 

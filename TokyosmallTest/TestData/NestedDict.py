@@ -19,11 +19,11 @@ from collections import defaultdict
 
 
 # Opens Edge Json/Dictionary
-with open ("E2.json", "r") as myfile:
+with open ("network3-8-25.json", "r") as myfile:
     Edgedata=myfile.read().replace('\n', '')
 
 #Opens Node JSON/Dictionary
-with open ("N2.json", "r") as myfile:
+with open ("node-attributes.json", "r") as myfile:
     Nodedata=myfile.read().replace('\n', '')
     
     #creates multi nested dictionary - which at this point key 'element' has a value which is a set etc
@@ -39,7 +39,7 @@ def set_default(obj):
 result = json.dumps(target, default=set_default, indent = 1).replace("\\","").replace("}{", "},{").replace("   ", "").replace("\"{", "{").replace("}\"", "}")
 
 #Writes out the result for your visualizations! 
-f = open( 'NetworkJSON.json', 'w' )
+f = open( 'FinalNetwork3-8-25.json', 'w' )
 f.write(result )
 f.close()
 
