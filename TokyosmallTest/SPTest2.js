@@ -18,15 +18,16 @@ This demo gives examples of
     dataType: 'json'
   }).done(function(graphP) {  
 
-    console.log(graphP)
+    // console.log(graphP)
 
-    var loading = document.getElementById('loading');
+    // var loading = document.getElementById('loading');
 
-    console.log(graphP);
+    // console.log(graphP);
    
     var elements = graphP.elements;
-    console.log(elements )
-    loading.classList.add('loaded');
+    // console.log(elements )
+    // loading.classList.add('loaded');
+
     
     var cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
@@ -35,30 +36,30 @@ This demo gives examples of
           .css({
             'content': 'data(id)',
             // for tot mutations between 0 and 10 map to font size from 0 to 10
-            'font-size' : 'mapData(total_mutations, 5, 10, 10, 100)',
-            'height': 'mapData(total_mutations, 5, 10, 10, 50)',
-            'width': 'mapData(total_mutations, 5, 10, 10, 50)',
+            'font-size' : 'dataData(total_mutations, 0, 498, 10, 25)',
+            'height': 'mapData(total_mutations, 86, 498, 10, 100)',
+            'width': 'mapData(total_mutations, 86, 498, 10, 100)',
             
-            'color' : 'black',
+            //'color' : 'black',
             //node opacity 
             'background-opacity': 'mapData(total_mutations, 5, 10, 1, 1)',
-            'border-opacity': 'mapData(total_mutations, 5, 10, 1, 1)',
+            'border-opacity': 'mapData(total_mutations, 5, 10, 0, 0)',
             //text-opacity is for both background and outline
             'text-opacity': 'mapData(total_mutations, 5, 10, 1, 1)',
             'text-valign': 'center',
-            'text-outline-width': 1,
+            'text-outline-width': 0,
             'text-outline-color': 'black',
-            'background-color': 'mapData(total_mutations, 40, 100, yellow, red)',
+            'background-color': 'mapData(total_mutations, 200, 500, yellow, red)',
       })
     .selector(':selected')
       .css({
-        'border-width': 3,
+        'border-width': .5,
         'border-color': '#333'
       })
     .selector('edge')
       .css({
         'opacity': 'mapData(count, 30, 75, 1, 1)',
-        'width': 'mapData(count, 30, 75, 0, 3)',
+        'width': 'mapData(count, 30, 75, 0, 1)',
         'line-color': 'black',
       }),
       layout: {

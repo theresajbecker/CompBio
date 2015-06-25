@@ -51,7 +51,7 @@ for row in Ereader:
 		#json.dump converts the dictionary to a json file (what to write, where to write it, how many columns to indent)
 		json.dump(edtest, Edgejson, indent = 3)
 #writes to the new file 
-print holding
+#print holding
 Edgejson.write('\n')
 
 
@@ -65,6 +65,7 @@ for row in Nreader:
 				#print "ROW", row
 			#creates a dictionary with key 'data' and value 'row' for each line
 			#required to maintain the proper nesting of the json file later
+		if 86 <= row['total_mutations'] <= 498: 
 			ndtest = {'data': row}
 			print ndtest
 		#json.dump converts the dictionary to a json file (what to write, where to write it, how many columns to indent)
