@@ -40,6 +40,9 @@ for row in Ereader:
 	if row['source'] == 'source':
 		pass
 	else:
+		for key in row:
+			if row['count']:
+				row['count'] = int(row['count'])
 		#creates a dictionary with key 'data' and value 'row' for each line
 		#required to maintain the proper nesting of the json file later
 		edtest = {'data': row}
@@ -55,11 +58,17 @@ Edgejson.write('\n')
 for row in Nreader:
 	#if current node id is in holding, it will be written to json for later node creation
 	if row['id'] in holding:
-		#creates a dictionary with key 'data' and value 'row' for each line
-		#required to maintain the proper nesting of the json file later
-		ndtest = {'data': row}
+		for key in row:
+			if row['total_mutations']:
+				row['total_mutations'] = int(row['total_mutations'])
+				#print "int"
+				#print "ROW", row
+			#creates a dictionary with key 'data' and value 'row' for each line
+			#required to maintain the proper nesting of the json file later
+			ndtest = {'data': row}
+			print ndtest
 		#json.dump converts the dictionary to a json file (what to write, where to write it, how many columns to indent)
-		json.dump(ndtest, Nodejson, indent = 2)
+			json.dump(ndtest, Nodejson, indent = 2)
 	else:
 		pass
 Nodejson.write('\n')
