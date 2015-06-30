@@ -34,6 +34,7 @@ Nreader = csv.DictReader( Nodecsvfile, Nfieldnames)
 #Source/Target names are written to holding. Only source/target names contained in holding will be made in to Nodes- 
 # aka removes unecessary nodes
 holding = []
+values = []
 
 for row in Ereader:
 	#prevents the header line from being created in the network
@@ -43,6 +44,7 @@ for row in Ereader:
 		for key in row:
 			if row['count']:
 				row['count'] = int(row['count'])
+				values.append(row['count'])
 		#creates a dictionary with key 'data' and value 'row' for each line
 		#required to maintain the proper nesting of the json file later
 		edtest = {'data': row}
@@ -72,6 +74,8 @@ for row in Nreader:
 			json.dump(ndtest, Nodejson, indent = 2)
 	else:
 		pass
+print "Max Edge Val", max(values)
+print "Min Edge  Val", min(values)
 Nodejson.write('\n')
 
 

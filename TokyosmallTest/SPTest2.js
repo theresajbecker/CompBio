@@ -11,34 +11,30 @@ This demo gives examples of
 */
 
   $(document).ready(function(){
-
+// uses ajax to fetch network files from rawgit stores at variable graphP
    var graphP = $.ajax({
     url: 'https://rawgit.com/theresajbecker/CompBio/master/TokyosmallTest/TestData/FinalNetwork3-8-25.json',
     type: 'GET',
     dataType: 'json'
   }).done(function(graphP) {  
-
-    // console.log(graphP)
-
-    // var loading = document.getElementById('loading');
-
-    // console.log(graphP);
-   
+    // .done required to sync asynchronous fetching
+    //returns graphP which is json struct
+    // takes graphP.elements and stores as elements - move one level in to the struct 
     var elements = graphP.elements;
-    // console.log(elements )
-    // loading.classList.add('loaded');
-
     
+    //instantiates struct 
     var cy = window.cy = cytoscape({
+      // creates container 
       container: document.getElementById('cy'),
       style: cytoscape.stylesheet()
+      //sets css for nodes - see cystoscape.js documention 
         .selector('node')
           .css({
             'content': 'data(id)',
             // for tot mutations between 0 and 10 map to font size from 0 to 10
             'font-size' : 'dataData(total_mutations, 0, 498, 10, 25)',
-            'height': 'mapData(total_mutations, 86, 498, 10, 100)',
-            'width': 'mapData(total_mutations, 86, 498, 10, 100)',
+            'height': 'mapData(total_mutations, 86, 498, 10, 60)',
+            'width': 'mapData(total_mutations, 86, 498, 10, 60)',
             
             //'color' : 'black',
             //node opacity 
@@ -58,11 +54,12 @@ This demo gives examples of
       })
     .selector('edge')
       .css({
-        'opacity': 'mapData(count, 30, 75, 1, 1)',
-        'width': 'mapData(count, 30, 75, 0, 1)',
+        'opacity': 'mapData(count, 26, 124, .25, 1)',
+        'width': 'mapData(count, 26, 124, .5, 2)',
         'line-color': 'black',
       }),
       layout: {
+        //cose is force directed layout 
         name: 'cose',
         paddint: 10
       },
